@@ -9,7 +9,7 @@ fun main(){
     val salidas: MutableList<DoubleArray> = mutableListOf()
 
     val train: MutableList<DoubleArray> = mutableListOf()
-    File("C:\\Users\\Cesar\\Desktop\\training.data").forEachLine {
+    File("training.data").forEachLine {
         if (it.isNotEmpty()){
             val tmp = it.split(",")
             train.add(DoubleArray(tmp.size))
@@ -119,7 +119,7 @@ fun main(){
     //****************** TEST ******************
     val salidaTest: MutableList<DoubleArray> = mutableListOf()
     val test: MutableList<DoubleArray> = mutableListOf()
-    File("C:\\Users\\Cesar\\Desktop\\test.data").forEachLine {
+    File("test.data").forEachLine {
         if (it.isNotEmpty()){
             val tmp = it.split(",")
             test.add(DoubleArray(tmp.size))
